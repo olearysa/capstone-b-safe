@@ -16,7 +16,7 @@ COPY . .
 WORKDIR .
 
 # Run unittests
-RUN python -m unittest unit.py
+CMD python -m unittest unit.py
 
-# Define entry
-ENTRYPOINT ["python", "main.py"]
+# Run Main
+CMD python main.py
