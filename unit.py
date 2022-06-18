@@ -2,9 +2,9 @@ import unittest
 import main
 
 class Testing(unittest.TestCase):
-	self.math = main.Math() 
+	math = main.Math()
 	def test_add(self):
-		ans = self.math.add(2,2)
+		ans = self.math.plus(2,2)
 		self.assertEqual(ans,4)
 	def test_minus(self):
 		ans = self.math.minus(2,1)
