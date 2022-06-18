@@ -2,12 +2,12 @@
 FROM ubuntu:18.04
 
 # Install required packages
-RUN apt-get update \
- && apt-get upgrade\
- && apt-get install -y --no-install-recommends \
-    python3 \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3.5 \
     python3-pip \
-    python3-setuptools
+    && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Copy this repo to a folder in the Docker container
 COPY . .
