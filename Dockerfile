@@ -16,7 +16,7 @@ COPY . .
 WORKDIR .
 
 # Run unittests
-CMD python -m unittest unit.py
+CMD python3 -m unittest unit.py
 
 # Run Main
-CMD python main.py
+CMD python3 main.py
