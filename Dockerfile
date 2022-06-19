@@ -19,6 +19,6 @@ WORKDIR .
 CMD python3 -m unittest unit.py
 
 # Run Main
-CMD python3 main.py
+# CMD python3 main.py
 
 EXPOSE 22
